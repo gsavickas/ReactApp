@@ -1,5 +1,4 @@
 import Todos from './components/Todos';
-// import TodosItem from './components/TodosItem';
 import './App.css';
 import React, { Component } from 'react';
 
@@ -29,9 +28,7 @@ state = {
     console.log(this.state.todos);
     return (
       <div className="App">
-      <p> 
-        <Todos/>
-      </p>
+      <Todos todos={this.state.todos}/>
       </div>
     );
   }

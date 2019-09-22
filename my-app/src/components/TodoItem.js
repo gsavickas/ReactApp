@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-// import Todos from './Todos';
+import React, { Component } from 'react'
 
-class TodosItem extends Component {
-  render(){
-    return this.props.todos.map((todos) => (
-      <TodosItem todos={todos}/>
-    ));
+export class TodoItem extends Component {
+  render() {
+    return (
+      <div>
+        <p>{ this.props.todos.title }</p>
+      </div>
+    )
   }
 }
 
-export default TodosItem;
+export default TodoItem

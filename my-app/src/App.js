@@ -22,13 +22,18 @@ state = {
     }
   ]
 }
-
-
   render() {
     console.log(this.state.todos);
     return (
       <div className="App">
+<<<<<<< Updated upstream
       <Todos todos={this.state.todos}/>
+=======
+      <p> 
+        <Todos todos={this.state.todos}/>
+        <Todos/>
+      </p>
+>>>>>>> Stashed changes
       </div>
     );
   }

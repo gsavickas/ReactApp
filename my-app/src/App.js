@@ -13,7 +13,7 @@ state = {
     {
       id: 2, 
       title: 'Say your prayers',
-      completed: false
+      completed: true
     },
     {
       id: 3, 
@@ -26,14 +26,7 @@ state = {
     console.log(this.state.todos);
     return (
       <div className="App">
-<<<<<<< Updated upstream
       <Todos todos={this.state.todos}/>
-=======
-      <p> 
-        <Todos todos={this.state.todos}/>
-        <Todos/>
-      </p>
->>>>>>> Stashed changes
       </div>
     );
   }

@@ -1,34 +1,34 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class TodoItem extends Component {
+
+  getStyle = () => {
+    if (this.props.todos.completed)
+    {
+      return {
+        textDecoration: 'line-through'
+      }
+    }
+    else {
+      return {
+        textDecoration: 'none'
+      }
+    }
+  }
+
   render() {
     return (
-      <div>
-<<<<<<< Updated upstream
-        <p>{ this.props.todos.title }</p>
-=======
-        <p>Hello</p>
->>>>>>> Stashed changes
+      <div style={this.getStyle()}>
+        <p> {this.props.todos.title} </p>
       </div>
     )
   }
 }
 
+TodoItem.propsTypes = {
+  todo: PropTypes.object.isRequired
+}
+
 export default TodoItem
-<<<<<<< Updated upstream
-=======
 
-
-
-// import React, { Component } from 'react';
-
-// class TodosItem extends Component {
-//   render(){
-//     return this.props.todos.map((todos) => (
-//       <TodosItem todos={todos}/>
-//     ));
-//   }
-// }
-
-// export default TodosItem;
->>>>>>> Stashed changes

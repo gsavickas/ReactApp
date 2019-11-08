@@ -13,7 +13,7 @@ state = {
     {
       id: 2, 
       title: 'Say your prayers',
-      completed: false
+      completed: true
     },
     {
       id: 3, 
@@ -22,8 +22,6 @@ state = {
     }
   ]
 }
-
-
   render() {
     console.log(this.state.todos);
     return (

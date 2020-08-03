@@ -1,1 +1,1 @@
-This is my first react app. React is a Java Script library that allows developers the flexability for single page web applications. 
+This is my first react app. React is a Java Script library build by facebook It allows developers the flexability to build responsive single page web applications. 
